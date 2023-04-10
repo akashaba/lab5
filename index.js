@@ -1,3 +1,4 @@
+"use strict"
 // Question 1
 
 function max(a , b) {
