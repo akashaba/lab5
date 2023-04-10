@@ -28,18 +28,19 @@ console.log(isVowel('u'))
 
 //Question 4
 
-function sum(...arr){
-    var total = arr.reduce((a , b) => a+b, 0);
-    // for(var i=0; i<arr.length; i++){
-    //     total +=arr[i]
-    // }
+function sum(array){
+    let total =0;//= 0arr.reduce((a , b) => a+b, 0);
+    for(let i=0; i<array.length; i++){
+        total +=array[i]
+    }
+  
     return total;
 }
 function multiply(...arr){
-    var total = arr.reduce((a , b) => a*b);
-    // for(var i=0; i<arr.length; i++){
-    //     total *=arr[i]
-    // }
+    var total =0;// arr.reduce((a , b) => a*b);
+    for(var i=0; i<arr.length; i++){
+        total *=arr[i]
+    }
     return total;
 }
 console.log(sum(1,2,3,4))
@@ -49,9 +50,9 @@ console.log(multiply(1,2,3,4))
 //Question 5
 
 function reverse(a){
-    // var rev;
+    //var rev;
     // for(var i=a.length-1;i>=0;i--){
-    //     rev +=a[i]
+    //    var rev = rev + a[i]
     // }
     // return rev;
     return a.split("").reverse().join("")
